@@ -1,12 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  max-width: 100%;
+}
+
 body {
   background-color: rgba(24, 22, 22, 0.9);
+  align-items: center;
+  justify-content: center;
 }
 
 .container-fluid {
   display: grid;
-  /*   grid-template-areas:
-    "1 2 3 4"
-    "5 6 7 8"; */
   grid-gap: 1px;
   border: 1px solid rgb(224, 18, 18);
   border-radius: 10px;
@@ -23,10 +33,6 @@ header {
   padding: 30px 10%;
 }
 
-/* .nav__links {
-  list-style: none;
-}
-*/
 nav ul li {
   display: inline-block;
   padding: 0px 20px;
@@ -34,32 +40,6 @@ nav ul li {
   cursor: pointer;
 }
 
-/* .nav__links li:nth-child(1) {
-  padding: 0 20px 0 0;
-} */
-
-/* .nav__links ul li a {
-  transition: all 0.3s ease 0s;
-} */
-/* .nav__links li a:hover {
-  color: #0088a9;
-}
- */
-/* .cta {
-  order: 2;
-} */
-/* .logo {
-  cursor: pointer;
-  order: 3;
-  margin-left: auto;
-}
- */
-/* Importante */
-.name {
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
 .infos {
   box-sizing: border-box;
   background: #e81a30;
@@ -78,6 +58,7 @@ nav ul li {
   font-weight: 800;
   left: -130%;
   margin-top: 10px;
+  border-radius: 45px;
 }
 #tel {
   position: inherit;
@@ -85,6 +66,7 @@ nav ul li {
   font-weight: 800;
   left: -80%;
   margin-top: 10px;
+  border-radius: 45px;
 }
 #rec {
   position: inherit;
@@ -92,6 +74,28 @@ nav ul li {
   font-weight: 800;
   left: -150%;
   margin-top: 10px;
+  border-radius: 45px;
+}
+
+/* BOTON DE LOGIN */
+#btn-ingresar {
+  background-color: #1f7fa8;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  color: black;
+  font-weight: 500;
+  padding: 0px;
+  width: 90px;
+  height: 45px;
+  border: 1px solid #00000f;
+  margin: 0 0 30px -30px;
+  cursor: pointer;
+}
+
+#btn-ingresar:hover {
+  color: white;
+  border: 2px solid black;
 }
 
 button {
@@ -104,6 +108,7 @@ button {
 }
 button:hover {
   background-color: rgba(0, 136, 169, 0.8);
+  font-weight: 600;
 }
 
 .name {
@@ -133,19 +138,21 @@ img {
 .btn {
   padding-top: 13px;
   position: relative;
-  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
   display: inline-block;
   width: 45px;
   height: 45px;
   border: 1px solid #fff;
   margin: 0 20px;
-  border-radius: 45px;
+  border-radius: 50%;
   cursor: pointer;
 }
 
 .btn:hover {
   background: #fff;
   color: #2f2828;
+  font-weight: 600;
   box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -181,59 +188,19 @@ a:hover {
   cursor: pointer;
 }
 
-/* .uno {
-  grid-area: 1;
-}
-.dos {
-  grid-area: 2;
-}
-.tres {
-  grid-area: 3;
-}
-.cuatro {
-  grid-area: 4;
-}
-.cinco {
-  grid-area: 5;
-}
-.seis {
-  grid-area: 6;
-}
-.siete {
-  grid-area: 7;
-}
-.ocho {
-  grid-area: 8;
-} */
-
-@media (max-width: 500px) {
-  .container-fluid {
-    display: grid;
-    /*     grid-template-columns:
-      "uno dos"
-      "tres cuatro"
-      "cinco seis"
-      "siete ocho";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; */
-  }
-}
 aside {
   position: relative;
   background-color: #19d95e;
-  max-width: 100vw;
   height: 100px;
 }
 article {
   position: relative;
   background-color: #5d55ff;
-  max-width: 100vw;
   height: 100px;
 }
 section {
   position: relative;
   background-color: #f5de0d;
-  max-width: 100vw;
   height: 100px;
 }
 
@@ -295,15 +262,22 @@ section {
   padding: 8px;
   transition: 0.1s;
 }
-.social a:hover {
-  color: #f5de0d;
+
+.infos #site {
+  background-color: none;
+  position: absolute;
+  color: #2f2828;
+  left: 1100px;
+  font-weight: 600;
 }
-#site {
-  background-color: #e81a30;
+
+.infos #site:hover {
+  background-color: white;
+  color: black;
 }
 
 nav ul li a:link {
-  color: #e81a30;
+  color: #15add3;
 }
 a:visited {
   color: #097590;
@@ -312,4 +286,58 @@ a:visited {
 nav ul li a:hover {
   color: #15add3;
   background: none;
+}
+/* MODAL BOOTSTRAP */
+
+@media (min-width: 501px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1.5rem;
+  }
+}
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+/* Correciones */
+#regbut {
+  border-radius: 24px;
+  padding-right: 60px;
+  margin: 0;
+  background-position-y: 100px;
+}
+
+/* ESTILOS2 */
+
+.modal-footer {
+  border-top: 0px;
+}
+.modal-dialog {
+  margin-top: 20vh;
+}
+
+.container-login {
+  position: relative;
+  left: 40px;
 }
