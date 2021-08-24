@@ -23,7 +23,7 @@ var the_header_html = `
 
             <!--Header-->
             <div class="modal-header">
-              <img src="/assets/profile.jpg" alt="avatar" class="rounded-circle img-responsive">
+              <img src="/assets/profile.svg" alt="avatar" class="rounded-circle img-responsive">
             </div>
             <!--Body-->
             <div class="modal-body text-center mb-1">
@@ -36,7 +36,7 @@ var the_header_html = `
               </div>
 
               <div class="text-center mt-4">
-                <button class="btn btn-cyan mt-1">Login <i class="fas fa-sign-in ml-1"></i></button>
+                <button class="btn btn-info btn-link text-dark border border-primary rounded-pill">Login <i class="fas fa-sign-in-alt"></i></button>
               </div>
       </div>
   
