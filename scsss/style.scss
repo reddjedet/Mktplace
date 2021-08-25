@@ -19,13 +19,6 @@ body {
   justify-content: center;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-}
-
 nav ul li {
   display: inline-block;
   padding: 0px 20px;
@@ -33,17 +26,16 @@ nav ul li {
   cursor: pointer;
 }
 
-.infos {
-  box-sizing: border-box;
-  background: #e81a30;
+#infos {
   height: 220px;
   padding-top: 67px;
   transform: translate3d(0, 105%, 0);
 }
 
+/* ya no existe
 .cta:hover {
   background: none;
-}
+} */
 
 #con {
   position: inherit;
@@ -53,6 +45,7 @@ nav ul li {
   margin-top: 10px;
   border-radius: 45px;
 }
+
 #tel {
   position: inherit;
   font-size: 10px;
@@ -61,6 +54,7 @@ nav ul li {
   margin-top: 10px;
   border-radius: 45px;
 }
+
 #rec {
   position: inherit;
   font-size: 10px;
@@ -68,22 +62,6 @@ nav ul li {
   left: -150%;
   margin-top: 10px;
   border-radius: 45px;
-}
-
-/* BOTON DE LOGIN */
-#btn-ingresar {
-  background-color: #1f7fa8;
-  border-radius: 8px;
-  position: relative;
-  display: flex;
-  color: #111111;
-  font-weight: 500;
-  padding: 0px;
-  width: 90px;
-  height: 45px;
-  border: 1px solid #00000f;
-  margin: 0 0 30px -30px;
-  cursor: pointer;
 }
 
 #btn-ingresar:hover {
@@ -98,10 +76,11 @@ button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-}
-button:hover {
-  background-color: rgba(0, 136, 169, 0.8);
-  font-weight: 600;
+
+  &:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    font-weight: 600;
+  }
 }
 
 .name {
@@ -109,10 +88,10 @@ button:hover {
   top: -25px;
   left: 500px;
 }
+
 img {
   box-sizing: border-box;
   position: absolute;
-  z-index: 1;
   top: 130px;
   left: 150px;
   width: 100px;
@@ -120,33 +99,32 @@ img {
   border: 2px solid #fff;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 4px 6px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 6px 5px 0 rgba(0, 0, 0, 0.7);
 }
 
 .action {
   margin-top: 35px;
   text-align: center;
-}
 
-.btn {
-  padding-top: 13px;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  border: 1px solid #fff;
-  margin: 0 20px;
-  border-radius: 50%;
-  cursor: pointer;
-}
+  .btn {
+    padding-top: 13px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border: 1px solid #fff;
+    margin: 0 20px;
+    border-radius: 50%;
+    cursor: pointer;
 
-.btn:hover {
-  background: #fff;
-  color: #2f2828;
-  font-weight: 600;
-  box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.2);
+    &:hover {
+      background: #fff;
+      color: #2f2828;
+      box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.7);
+    }
+  }
 }
 
 .fa {
@@ -175,14 +153,8 @@ img {
   left: 2px;
 }
 
-a:hover {
-  background-color: rgba(1, 1, 1, 0.5);
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 /* CARD ABOUT US */
+
 .container-card {
   background: rgba(255, 255, 255, 0.15);
   width: 300px;
@@ -203,9 +175,10 @@ a:hover {
   outline: 0;
   transition: 0.2s;
   cursor: pointer;
-}
-.container-card:hover {
-  box-shadow: 0 6px 8px rgba(232, 26, 48, 0.781);
+
+  &:hover {
+    box-shadow: 0 6px 8px rgba(232, 26, 48, 0.781);
+  }
 }
 
 .profilepic {
@@ -217,9 +190,11 @@ a:hover {
   left: 0px;
   top: 0px;
 }
+
 .title {
   margin-top: 10px;
 }
+
 .description {
   font-size: 0.8em;
   opacity: 0.7;
@@ -230,36 +205,39 @@ a:hover {
   opacity: 0.85;
   font-size: 0.9em;
 }
+
 .social {
   margin-top: 1.25em;
-}
-.social a {
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #fff;
-  padding: 8px;
-  transition: 0.1s;
+
+  a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px;
+    transition: 0.1s;
+  }
 }
 
-.infos #site {
-  background-color: none;
-  position: absolute;
-  color: #2f2828;
-  left: 1100px;
+#infos #site {
   font-weight: 600;
-}
-
-.infos #site:hover {
-  background-color: white;
-  color: #111;
 }
 
 nav ul li a:link {
   color: #15add3;
   font-weight: 600;
 }
-a:visited {
-  color: #099090;
+
+a {
+  &:hover {
+    background-color: rgba(1, 1, 1, 0.5);
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &:visited {
+    color: #099090;
+  }
 }
 
 nav ul li a:hover {
@@ -277,9 +255,10 @@ nav ul li a:hover {
 @media (min-width: 501px) {
   .modal-dialog {
     max-width: 400px;
-  }
-  .modal-dialog .modal-content {
-    padding: 1.5rem;
+
+    .modal-content {
+      padding: 1.5rem;
+    }
   }
 }
 
@@ -332,12 +311,15 @@ nav ul li a:hover {
 h4 {
   color: #e81a30;
 }
+
 .slider {
   height: 100px;
 }
+
 /*# sourceMappingURL=style.css.map */
 
 /* Correciones */
+
 #regbut {
   border-radius: 24px;
   padding-right: 60px;
@@ -351,13 +333,53 @@ h4 {
   background-size: 110%;
 }
 
-.container-fluid {
-  display: grid;
-  grid-gap: 1px;
-  border: 1px solid rgb(224, 18, 18);
-  border-radius: 10px;
-  width: 100%;
-  height: 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  grid-area: header;
 }
+
+footer {
+  grid-area: footer;
+}
+
+/* BOTON DE LOGIN */
+
+#btn-ingresar {
+  background-color: #1f7fa8;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  color: #111111;
+  font-weight: 500;
+  padding: 0px;
+  width: 90px;
+  height: 45px;
+  border: 1px solid #00000f;
+  margin: 0 0 30px 0px;
+  cursor: pointer;
+  grid-area: ingresar;
+}
+
+#indexphoto {
+  display: absolute;
+  top: -100px;
+  margin-left: 6px;
+  grid-area: photo;
+}
+
+#site-footer {
+  grid-area: sitef;
+}
+
+/* @media only screen and (max-width: 370px) {
+  body {
+    display: grid;
+    grid-template-areas: "header header header" "header photo header" "ingresar ingresar ingresar" "ingresar ingresar ingresar" "footer footer footer" "sitef sitef sitef";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+ */

@@ -6,8 +6,8 @@ var the_header_html = `
         <li><a href="catalogue.html">Otros proyectos</a></li>
         <li><a href="about.html">Sobre nosotros</a></li>
       </ul>
-      <div class="container-login">
-        <div class="text-left">
+      <div class="row">
+        <div class="col sm-2 col-md-3">
           <a href="" class="btn btn-info" data-toggle="modal" data-target="#modalLoginAvatar"
             id="btn-ingresar">Ingresar</a>
         </div>

@@ -1,0 +1,433 @@
+/* line 1, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+/* line 9, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+body,
+html {
+  max-width: 100%;
+}
+
+/* line 14, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+body {
+  background-color: rgba(24, 22, 22, 0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 20, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
+  color: rgba(255, 6, 6, 0.52);
+  cursor: pointer;
+}
+
+/* line 27, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#infos {
+  height: 220px;
+  padding-top: 67px;
+  transform: translate3d(0, 105%, 0);
+}
+
+/* ya no existe
+.cta:hover {
+  background: none;
+} */
+/* line 38, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#con {
+  position: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  left: -130%;
+  margin-top: 10px;
+  border-radius: 45px;
+}
+
+/* line 47, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#tel {
+  position: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  left: -80%;
+  margin-top: 10px;
+  border-radius: 45px;
+}
+
+/* line 56, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#rec {
+  position: inherit;
+  font-size: 10px;
+  font-weight: 800;
+  left: -150%;
+  margin-top: 10px;
+  border-radius: 45px;
+}
+
+/* line 65, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#btn-ingresar:hover {
+  color: white;
+  border: 2px solid #111111;
+}
+
+/* line 70, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: #0088a9;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+}
+
+/* line 80, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+  font-weight: 600;
+}
+
+/* line 86, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.name {
+  position: relative;
+  top: -25px;
+  left: 500px;
+}
+
+/* line 92, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+img {
+  box-sizing: border-box;
+  position: absolute;
+  top: 130px;
+  left: 150px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 4px 6px 5px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* line 105, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.action {
+  margin-top: 35px;
+  text-align: center;
+}
+
+/* line 109, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.action .btn {
+  padding-top: 13px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #fff;
+  margin: 0 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* line 122, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.action .btn:hover {
+  background: #fff;
+  color: #2f2828;
+  box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.7);
+}
+
+/* line 130, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.fa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 20px;
+  font-size: 19px;
+  padding-top: 12px;
+}
+
+/* line 141, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.fa-phone {
+  font-size: 22px;
+}
+
+/* line 145, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.fa-comment {
+  font-size: 20px;
+  padding-top: 10px;
+  left: 2px;
+}
+
+/* line 151, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.fa-heart {
+  top: 1px;
+  left: 2px;
+}
+
+/* CARD ABOUT US */
+/* line 158, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.container-card {
+  background: rgba(255, 255, 255, 0.15);
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 8px 32px 0 rgba(20, 80, 19, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 34em;
+  outline: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* line 179, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.container-card:hover {
+  box-shadow: 0 6px 8px rgba(232, 26, 48, 0.781);
+}
+
+/* line 184, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.profilepic {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  left: 0px;
+  top: 0px;
+}
+
+/* line 194, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.title {
+  margin-top: 10px;
+}
+
+/* line 198, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.description {
+  font-size: 0.8em;
+  opacity: 0.7;
+}
+
+/* line 203, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.phrase {
+  margin-top: 12px;
+  opacity: 0.85;
+  font-size: 0.9em;
+}
+
+/* line 209, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.social {
+  margin-top: 1.25em;
+}
+
+/* line 212, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.social a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+  padding: 8px;
+  transition: 0.1s;
+}
+
+/* line 221, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#infos #site {
+  font-weight: 600;
+}
+
+/* line 225, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+nav ul li a:link {
+  color: #15add3;
+  font-weight: 600;
+}
+
+/* line 231, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+a:hover {
+  background-color: rgba(1, 1, 1, 0.5);
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 238, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+a:visited {
+  color: #099090;
+}
+
+/* line 243, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+nav ul li a:hover {
+  color: #097590;
+  background: none;
+}
+
+/* line 248, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.container-login {
+  position: relative;
+  left: 40px;
+}
+
+/* MODAL BOOTSTRAP */
+@media (min-width: 501px) {
+  /* line 256, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+  .modal-dialog {
+    max-width: 400px;
+  }
+  /* line 259, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+  .modal-dialog .modal-content {
+    padding: 1.5rem;
+  }
+}
+
+/* line 265, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.modal-header img {
+  position: relative;
+  top: 0px;
+  left: 100px;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* line 275, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.modal-dialog {
+  margin-top: 20vh;
+}
+
+/* line 279, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.btn-round {
+  border-radius: 3rem;
+}
+
+/* line 283, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+/* line 287, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+/* line 291, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.btn-round {
+  border-radius: 3rem;
+}
+
+/* line 295, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.delimiter {
+  padding: 1rem;
+}
+
+/* line 299, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+/* line 303, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+/* line 307, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.modal-footer {
+  border-top: 0px;
+}
+
+/* line 311, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+h4 {
+  color: #e81a30;
+}
+
+/* line 315, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+.slider {
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
+/* Correciones */
+/* line 323, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#regbut {
+  border-radius: 24px;
+  padding-right: 60px;
+  margin: 0;
+  background-position-y: 100px;
+}
+
+/* line 330, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#theheader {
+  background-image: url(/assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+}
+
+/* line 336, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  grid-area: header;
+}
+
+/* line 344, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+footer {
+  grid-area: footer;
+}
+
+/* BOTON DE LOGIN */
+/* line 350, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#btn-ingresar {
+  background-color: #1f7fa8;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  color: #111111;
+  font-weight: 500;
+  padding: 0px;
+  width: 90px;
+  height: 45px;
+  border: 1px solid #00000f;
+  margin: 0 0 30px 0px;
+  cursor: pointer;
+  grid-area: ingresar;
+}
+
+/* line 366, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#indexphoto {
+  display: absolute;
+  top: -100px;
+  margin-left: 6px;
+  grid-area: photo;
+}
+
+/* line 373, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+#site-footer {
+  grid-area: sitef;
+}
+
+/* @media only screen and (max-width: 370px) {
+  body {
+    display: grid;
+    grid-template-areas: "header header header" "header photo header" "ingresar ingresar ingresar" "ingresar ingresar ingresar" "footer footer footer" "sitef sitef sitef";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+ */
+
+/*# sourceMappingURL=style.css.map */
