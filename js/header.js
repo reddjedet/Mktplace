@@ -1,17 +1,16 @@
 var the_header_html = `
 <header>
     <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogue.html">Otros proyectos</a></li>
-        <li><a href="about.html">Sobre nosotros</a></li>
-      </ul>
+      <div class="row" id="nav1">
+        <div class="col col-4"><a href="index.html">Inicio</a></div>
+        <div class="col col-4"><a href="catalogue.html">Otros proyectos</a></div>
+        <div class="col col-4"><a href="about.html">Sobre nosotros</a></div>
+      </row>
       <div class="row">
-        <div class="col sm-2 col-md-3">
+        <div class="col col-md-12 float-md-left" id="nav2">
           <a href="" class="btn btn-info" data-toggle="modal" data-target="#modalLoginAvatar"
             id="btn-ingresar">Ingresar</a>
         </div>
-        </button>
       </div>
 
       <!--Modal: Login with Avatar Form-->
@@ -20,6 +19,7 @@ var the_header_html = `
         <div class="modal-dialog cascading-modal modal-avatar modal-sm" role="document">
           <!--Content-->
           <div class="modal-content">
+
 
             <!--Header-->
             <div class="modal-header">

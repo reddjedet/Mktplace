@@ -5,22 +5,24 @@
   box-sizing: border-box;
   line-height: 1.5em;
   text-decoration: none;
+  text-align: center;
+  justify-content: center;
 }
 
-/* line 9, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 11, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 body,
 html {
   max-width: 100%;
 }
 
-/* line 14, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 16, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 body {
   background-color: rgba(24, 22, 22, 0.9);
   align-items: center;
   justify-content: center;
 }
 
-/* line 20, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 22, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 nav ul li {
   display: inline-block;
   padding: 0px 20px;
@@ -28,7 +30,7 @@ nav ul li {
   cursor: pointer;
 }
 
-/* line 27, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 29, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 #infos {
   height: 220px;
   padding-top: 67px;
@@ -39,7 +41,7 @@ nav ul li {
 .cta:hover {
   background: none;
 } */
-/* line 38, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 40, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 #con {
   position: inherit;
   font-size: 10px;
@@ -49,7 +51,7 @@ nav ul li {
   border-radius: 45px;
 }
 
-/* line 47, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 49, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 #tel {
   position: inherit;
   font-size: 10px;
@@ -59,7 +61,7 @@ nav ul li {
   border-radius: 45px;
 }
 
-/* line 56, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 58, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 #rec {
   position: inherit;
   font-size: 10px;
@@ -69,13 +71,13 @@ nav ul li {
   border-radius: 45px;
 }
 
-/* line 65, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 67, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 #btn-ingresar:hover {
   color: white;
   border: 2px solid #111111;
 }
 
-/* line 70, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
+/* line 72, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
 button {
   margin-left: 20px;
   padding: 9px 25px;
@@ -83,8 +85,6 @@ button {
   border: none;
   border-radius: 50px;
   cursor: pointer;
-  text-align: center;
-  justify-content: center;
 }
 
 /* line 80, C:/Users/Christian/Desktop/Mktplace/scsss/style.scss */
